@@ -1,0 +1,288 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Dec 26 00:22:15 2023
+| Host         : DESKTOP-5B1JED5 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file sel_sort_methodology_drc_routed.rpt -pb sel_sort_methodology_drc_routed.pb -rpx sel_sort_methodology_drc_routed.rpx
+| Design       : sel_sort
+| Device       : xc7z020clg400-3
+| Speed File   : -3
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 46
++-----------+----------+------------------------------------------+------------+
+| Rule      | Severity | Description                              | Violations |
++-----------+----------+------------------------------------------+------------+
+| SYNTH-4   | Warning  | Shallow depth for a dedicated block RAM  | 1          |
+| TIMING-20 | Warning  | Non-clocked latch                        | 34         |
+| XDCH-2    | Warning  | Same min and max delay values on IO port | 10         |
+| LATCH-1   | Advisory | Existing latches in the design           | 1          |
++-----------+----------+------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+SYNTH-4#1 Warning
+Shallow depth for a dedicated block RAM  
+The instance b1/ram8x4_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason: The depth (3 address bits) is shallow. Please use attribute (* ram_style = "distributed" *)  to instruct Vivado to infer distributed LUT RAM.
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch FSM_onehot_main_next_state_reg[0] cannot be properly analyzed as its control pin FSM_onehot_main_next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch FSM_onehot_main_next_state_reg[1] cannot be properly analyzed as its control pin FSM_onehot_main_next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch FSM_onehot_main_next_state_reg[2] cannot be properly analyzed as its control pin FSM_onehot_main_next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch current_index_nextstate_reg[0] cannot be properly analyzed as its control pin current_index_nextstate_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch current_index_nextstate_reg[1] cannot be properly analyzed as its control pin current_index_nextstate_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch current_index_nextstate_reg[2] cannot be properly analyzed as its control pin current_index_nextstate_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch data_out_reg[0] cannot be properly analyzed as its control pin data_out_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch data_out_reg[1] cannot be properly analyzed as its control pin data_out_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch data_out_reg[2] cannot be properly analyzed as its control pin data_out_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch data_out_reg[3] cannot be properly analyzed as its control pin data_out_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch loop_val_reg[0] cannot be properly analyzed as its control pin loop_val_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch loop_val_reg[1] cannot be properly analyzed as its control pin loop_val_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch loop_val_reg[2] cannot be properly analyzed as its control pin loop_val_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch loop_val_reg[3] cannot be properly analyzed as its control pin loop_val_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch min_val_reg[0] cannot be properly analyzed as its control pin min_val_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch min_val_reg[1] cannot be properly analyzed as its control pin min_val_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch min_val_reg[2] cannot be properly analyzed as its control pin min_val_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch min_val_reg[3] cannot be properly analyzed as its control pin min_val_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch ram_addr_reg[0] cannot be properly analyzed as its control pin ram_addr_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch ram_addr_reg[1] cannot be properly analyzed as its control pin ram_addr_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch ram_addr_reg[2] cannot be properly analyzed as its control pin ram_addr_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch ram_din_reg[0] cannot be properly analyzed as its control pin ram_din_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch ram_din_reg[1] cannot be properly analyzed as its control pin ram_din_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch ram_din_reg[2] cannot be properly analyzed as its control pin ram_din_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch ram_din_reg[3] cannot be properly analyzed as its control pin ram_din_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch ram_enable_reg cannot be properly analyzed as its control pin ram_enable_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch ram_wenable_reg cannot be properly analyzed as its control pin ram_wenable_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch read_val_reg[0] cannot be properly analyzed as its control pin read_val_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch read_val_reg[1] cannot be properly analyzed as its control pin read_val_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch read_val_reg[2] cannot be properly analyzed as its control pin read_val_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch read_val_reg[3] cannot be properly analyzed as its control pin read_val_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch temp_index_reg[0] cannot be properly analyzed as its control pin temp_index_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch temp_index_reg[1] cannot be properly analyzed as its control pin temp_index_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch temp_index_reg[2] cannot be properly analyzed as its control pin temp_index_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'addr[0]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks *] 0.000 [get_ports {{addr[0]} {addr[1]} {addr[2]} {data_in[0]} {data_in[1]} {data_in[2]} {data_in[3]} en sort we}]
+C:/Users/EMREYILDIZ/Desktop/Verilog Homeworks/homework6/homework6.srcs/constrs_1/new/emrem.xdc (Line: 2)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'addr[1]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks *] 0.000 [get_ports {{addr[0]} {addr[1]} {addr[2]} {data_in[0]} {data_in[1]} {data_in[2]} {data_in[3]} en sort we}]
+C:/Users/EMREYILDIZ/Desktop/Verilog Homeworks/homework6/homework6.srcs/constrs_1/new/emrem.xdc (Line: 2)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'addr[2]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks *] 0.000 [get_ports {{addr[0]} {addr[1]} {addr[2]} {data_in[0]} {data_in[1]} {data_in[2]} {data_in[3]} en sort we}]
+C:/Users/EMREYILDIZ/Desktop/Verilog Homeworks/homework6/homework6.srcs/constrs_1/new/emrem.xdc (Line: 2)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'data_in[0]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks *] 0.000 [get_ports {{addr[0]} {addr[1]} {addr[2]} {data_in[0]} {data_in[1]} {data_in[2]} {data_in[3]} en sort we}]
+C:/Users/EMREYILDIZ/Desktop/Verilog Homeworks/homework6/homework6.srcs/constrs_1/new/emrem.xdc (Line: 2)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'data_in[1]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks *] 0.000 [get_ports {{addr[0]} {addr[1]} {addr[2]} {data_in[0]} {data_in[1]} {data_in[2]} {data_in[3]} en sort we}]
+C:/Users/EMREYILDIZ/Desktop/Verilog Homeworks/homework6/homework6.srcs/constrs_1/new/emrem.xdc (Line: 2)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'data_in[2]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks *] 0.000 [get_ports {{addr[0]} {addr[1]} {addr[2]} {data_in[0]} {data_in[1]} {data_in[2]} {data_in[3]} en sort we}]
+C:/Users/EMREYILDIZ/Desktop/Verilog Homeworks/homework6/homework6.srcs/constrs_1/new/emrem.xdc (Line: 2)
+Related violations: <none>
+
+XDCH-2#7 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'data_in[3]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks *] 0.000 [get_ports {{addr[0]} {addr[1]} {addr[2]} {data_in[0]} {data_in[1]} {data_in[2]} {data_in[3]} en sort we}]
+C:/Users/EMREYILDIZ/Desktop/Verilog Homeworks/homework6/homework6.srcs/constrs_1/new/emrem.xdc (Line: 2)
+Related violations: <none>
+
+XDCH-2#8 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'en' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks *] 0.000 [get_ports {{addr[0]} {addr[1]} {addr[2]} {data_in[0]} {data_in[1]} {data_in[2]} {data_in[3]} en sort we}]
+C:/Users/EMREYILDIZ/Desktop/Verilog Homeworks/homework6/homework6.srcs/constrs_1/new/emrem.xdc (Line: 2)
+Related violations: <none>
+
+XDCH-2#9 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'sort' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks *] 0.000 [get_ports {{addr[0]} {addr[1]} {addr[2]} {data_in[0]} {data_in[1]} {data_in[2]} {data_in[3]} en sort we}]
+C:/Users/EMREYILDIZ/Desktop/Verilog Homeworks/homework6/homework6.srcs/constrs_1/new/emrem.xdc (Line: 2)
+Related violations: <none>
+
+XDCH-2#10 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'we' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks *] 0.000 [get_ports {{addr[0]} {addr[1]} {addr[2]} {data_in[0]} {data_in[1]} {data_in[2]} {data_in[3]} en sort we}]
+C:/Users/EMREYILDIZ/Desktop/Verilog Homeworks/homework6/homework6.srcs/constrs_1/new/emrem.xdc (Line: 2)
+Related violations: <none>
+
+LATCH-1#1 Advisory
+Existing latches in the design  
+There are 34 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+Related violations: <none>
+
+

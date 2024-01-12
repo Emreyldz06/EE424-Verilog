@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jan 30 02:18:22 2022
+# Process ID: 17164
+# Current directory: C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.runs/synth_1
+# Command line: vivado.exe -log sorting_imp_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sorting_imp_top.tcl
+# Log file: C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.runs/synth_1/sorting_imp_top.vds
+# Journal file: C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sorting_imp_top.tcl -notrace

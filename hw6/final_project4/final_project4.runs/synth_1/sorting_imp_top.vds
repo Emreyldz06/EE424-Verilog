@@ -1,0 +1,440 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jan 30 02:18:22 2022
+# Process ID: 17164
+# Current directory: C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.runs/synth_1
+# Command line: vivado.exe -log sorting_imp_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sorting_imp_top.tcl
+# Log file: C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.runs/synth_1/sorting_imp_top.vds
+# Journal file: C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sorting_imp_top.tcl -notrace
+Command: synth_design -top sorting_imp_top -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10176 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 361.613 ; gain = 100.922
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sorting_imp_top' [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/sorting_imp_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'GCD' [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/GCD.v:3]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter change bound to: 1 - type: integer 
+	Parameter subtract bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sorting' [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/sorting.v:2]
+	Parameter K bound to: 16 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter first_read bound to: 1 - type: integer 
+	Parameter adress_wait bound to: 2 - type: integer 
+	Parameter second_read bound to: 3 - type: integer 
+	Parameter compare bound to: 4 - type: integer 
+	Parameter first_write bound to: 5 - type: integer 
+	Parameter second_write bound to: 6 - type: integer 
+	Parameter write_wait bound to: 7 - type: integer 
+	Parameter done bound to: 8 - type: integer 
+	Parameter OUT_A bound to: 9 - type: integer 
+	Parameter OUT_B bound to: 10 - type: integer 
+	Parameter C1_adr bound to: 11 - type: integer 
+	Parameter C2_adr bound to: 12 - type: integer 
+	Parameter wait_write bound to: 13 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/sorting.v:41]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/RAM.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (1#1) [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/RAM.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'sorting' (2#1) [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/sorting.v:2]
+WARNING: [Synth 8-6104] Input port 'in1' has an internal driver [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/GCD.v:12]
+WARNING: [Synth 8-6104] Input port 'in2' has an internal driver [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/GCD.v:12]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/GCD.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'GCD' (3#1) [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/GCD.v:3]
+WARNING: [Synth 8-350] instance 'C2' of module 'GCD' requires 4 connections, but only 2 given [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/sorting_imp_top.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'sorting_imp_top' (4#1) [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/sorting_imp_top.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 418.324 ; gain = 157.633
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin C2:in1[7] to constant 0 [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/sorting_imp_top.v:12]
+WARNING: [Synth 8-3295] tying undriven pin C2:in1[6] to constant 0 [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/sorting_imp_top.v:12]
+WARNING: [Synth 8-3295] tying undriven pin C2:in1[5] to constant 0 [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/sorting_imp_top.v:12]
+WARNING: [Synth 8-3295] tying undriven pin C2:in1[4] to constant 0 [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/sorting_imp_top.v:12]
+WARNING: [Synth 8-3295] tying undriven pin C2:in1[3] to constant 0 [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/sorting_imp_top.v:12]
+WARNING: [Synth 8-3295] tying undriven pin C2:in1[2] to constant 0 [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/sorting_imp_top.v:12]
+WARNING: [Synth 8-3295] tying undriven pin C2:in1[1] to constant 0 [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/sorting_imp_top.v:12]
+WARNING: [Synth 8-3295] tying undriven pin C2:in1[0] to constant 0 [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/sorting_imp_top.v:12]
+WARNING: [Synth 8-3295] tying undriven pin C2:in2[7] to constant 0 [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/sorting_imp_top.v:12]
+WARNING: [Synth 8-3295] tying undriven pin C2:in2[6] to constant 0 [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/sorting_imp_top.v:12]
+WARNING: [Synth 8-3295] tying undriven pin C2:in2[5] to constant 0 [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/sorting_imp_top.v:12]
+WARNING: [Synth 8-3295] tying undriven pin C2:in2[4] to constant 0 [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/sorting_imp_top.v:12]
+WARNING: [Synth 8-3295] tying undriven pin C2:in2[3] to constant 0 [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/sorting_imp_top.v:12]
+WARNING: [Synth 8-3295] tying undriven pin C2:in2[2] to constant 0 [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/sorting_imp_top.v:12]
+WARNING: [Synth 8-3295] tying undriven pin C2:in2[1] to constant 0 [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/sorting_imp_top.v:12]
+WARNING: [Synth 8-3295] tying undriven pin C2:in2[0] to constant 0 [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/sources_1/new/sorting_imp_top.v:12]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 418.324 ; gain = 157.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 418.324 ; gain = 157.633
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/constrs_1/new/clock_constraint.xdc]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 13]]'. [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/constrs_1/new/clock_constraint.xdc:5]
+Finished Parsing XDC File [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/constrs_1/new/clock_constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.srcs/constrs_1/new/clock_constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sorting_imp_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/sorting_imp_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 776.094 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 776.094 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 776.094 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.134 . Memory (MB): peak = 776.211 ; gain = 0.117
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 776.211 ; gain = 515.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 776.211 ; gain = 515.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 776.211 ; gain = 515.520
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5587] ROM size for "WE" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "C1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5587] ROM size for "addr" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "sort_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "data_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'GCD'
+INFO: [Synth 8-5546] ROM "GCD_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                             0000
+                  change |                               01 |                             0001
+                subtract |                               10 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'GCD'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 776.211 ; gain = 515.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 9     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---RAMs : 
+	              128 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 5     
+	  15 Input      8 Bit        Muxes := 3     
+	   3 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	  15 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	  15 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 23    
+	  15 Input      1 Bit        Muxes := 14    
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module RAM 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              128 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sorting 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 5     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	  15 Input      8 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+	  15 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	  15 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 22    
+	  15 Input      1 Bit        Muxes := 14    
+Module GCD 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "C2/GCD_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\C2/B1/state_reg[4] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 776.211 ; gain = 515.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++----------------+---------------------+-----------+----------------------+----------------+
+|Module Name     | RTL Object          | Inference | Size (Depth x Width) | Primitives     | 
++----------------+---------------------+-----------+----------------------+----------------+
+|sorting_imp_top | C2/B1/RAM_1/RAM_reg | Implied   | 16 x 8               | RAM16X1S x 8   | 
++----------------+---------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:01:03 . Memory (MB): peak = 776.211 ; gain = 515.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:04 . Memory (MB): peak = 776.211 ; gain = 515.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++----------------+---------------------+-----------+----------------------+----------------+
+|Module Name     | RTL Object          | Inference | Size (Depth x Width) | Primitives     | 
++----------------+---------------------+-----------+----------------------+----------------+
+|sorting_imp_top | C2/B1/RAM_1/RAM_reg | Implied   | 16 x 8               | RAM16X1S x 8   | 
++----------------+---------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:01:13 . Memory (MB): peak = 794.223 ; gain = 533.531
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:01:16 . Memory (MB): peak = 794.223 ; gain = 533.531
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:01:16 . Memory (MB): peak = 794.223 ; gain = 533.531
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:01:16 . Memory (MB): peak = 794.223 ; gain = 533.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:01:17 . Memory (MB): peak = 794.223 ; gain = 533.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:01:18 . Memory (MB): peak = 794.223 ; gain = 533.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:01:18 . Memory (MB): peak = 794.223 ; gain = 533.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |     8|
+|3     |LUT1     |     2|
+|4     |LUT2     |    22|
+|5     |LUT3     |    42|
+|6     |LUT4     |    56|
+|7     |LUT5     |    10|
+|8     |LUT6     |    32|
+|9     |RAM16X1S |     8|
+|10    |FDRE     |    96|
+|11    |IBUF     |     1|
+|12    |OBUF     |     8|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------+--------+------+
+|      |Instance    |Module  |Cells |
++------+------------+--------+------+
+|1     |top         |        |   286|
+|2     |  C2        |GCD     |   276|
+|3     |    B1      |sorting |   220|
+|4     |      RAM_1 |RAM     |    40|
++------+------------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:01:18 . Memory (MB): peak = 794.223 ; gain = 533.531
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 794.223 ; gain = 175.645
+Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:01:18 . Memory (MB): peak = 794.223 ; gain = 533.531
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 794.223 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:27 . Memory (MB): peak = 794.223 ; gain = 546.805
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 794.223 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/asus/Desktop/4.SINIF-1.DNEM/final_project4/final_project4.runs/synth_1/sorting_imp_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sorting_imp_top_utilization_synth.rpt -pb sorting_imp_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 30 02:20:04 2022...
